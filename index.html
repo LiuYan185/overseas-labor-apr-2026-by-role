@@ -117,12 +117,12 @@ tr:hover td{background:#F8FAFC}
   <div class="kpi-row" id="kpiRow"><div class="kpi-card "><div class="label">总工时（4月）</div><div><span class="value">1533.02</span><span class="unit">小时</span></div></div><div class="kpi-card "><div class="label">总报账次数</div><div><span class="value">1876</span><span class="unit">次</span></div></div><div class="kpi-card warn"><div class="label">总差错次数</div><div><span class="value" style="color:#DC2626">65</span><span class="unit">次</span></div></div><div class="kpi-card warn"><div class="label">整体差错率</div><div><span class="value" style="color:#DC2626">3.46</span><span class="unit">%</span></div></div><div class="kpi-card "><div class="label">涉及BU数</div><div><span class="value">3</span><span class="unit">个</span></div></div><div class="kpi-card "><div class="label">问题区域数</div><div><span class="value">16</span><span class="unit">个</span></div></div></div>
 
   <div class="tab-nav">
-    <button class="tab-btn" onclick="switchTab('overview',this)">概览数据</button>
-    <button class="tab-btn active" onclick="switchTab('detail',this)">明细数据</button>
+    <button class="tab-btn active" onclick="switchTab('overview',this)">概览数据</button>
+    <button class="tab-btn" onclick="switchTab('detail',this)">明细数据</button>
   </div>
 
   <!-- Tab 1: 概览数据 -->
-  <div class="tab-content" id="tab-overview">
+  <div class="tab-content active" id="tab-overview">
     <div class="grid-2">
       <div class="panel">
         <div class="panel-header">
@@ -132,9 +132,9 @@ tr:hover td{background:#F8FAFC}
             <button class="chart-drill-btn" id="drillBarBtn1" onclick="setBarDrill('zone')">按大区</button>
           </div>
         </div>
-        <div class="chart-wrap compact" id="chart-bu-bar" _echarts_instance_="ec_1779853466270" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 537px; height: 280px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="671" height="350" style="position: absolute; left: 0px; top: 0px; width: 537px; height: 280px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
+        <div class="chart-wrap compact" id="chart-bu-bar" _echarts_instance_="ec_1779853647511" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 537px; height: 280px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="671" height="350" style="position: absolute; left: 0px; top: 0px; width: 537px; height: 280px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
       </div>
-      <div class="panel"><div class="panel-header"><h3>问题区域TOP10（差错率排序）</h3></div><div class="chart-wrap compact" id="chart-top10-region" _echarts_instance_="ec_1779853466273" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 536px; height: 280px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;"><canvas data-zr-dom-id="zr_0" width="670" height="350" style="position: absolute; left: 0px; top: 0px; width: 536px; height: 280px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(153px, 120px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;">GUS GL 大湖区<br>差错率: 6.25%<br>差错次数: 1次<br>报账次数: 16次</div></div></div>
+      <div class="panel"><div class="panel-header"><h3>问题区域TOP10（差错率排序）</h3></div><div class="chart-wrap compact" id="chart-top10-region" _echarts_instance_="ec_1779853647514" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 536px; height: 280px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="670" height="350" style="position: absolute; left: 0px; top: 0px; width: 536px; height: 280px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(180px, 109px, 0px); border-color: rgb(255, 255, 255); pointer-events: none; visibility: hidden; opacity: 0;">FBU 英国区<br>差错率: 17.09%<br>差错次数: 20次<br>报账次数: 117次</div></div></div>
     </div>
     <div class="grid-2">
       <div class="panel">
@@ -145,14 +145,14 @@ tr:hover td{background:#F8FAFC}
             <button class="chart-drill-btn" id="drillRoleBtn1" onclick="setRoleDrill('zone')">按大区</button>
           </div>
         </div>
-        <div class="chart-wrap" id="chart-bu-role-stack" _echarts_instance_="ec_1779853466271" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 537px; height: 340px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="671" height="425" style="position: absolute; left: 0px; top: 0px; width: 537px; height: 340px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
+        <div class="chart-wrap" id="chart-bu-role-stack" _echarts_instance_="ec_1779853647512" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 537px; height: 340px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="671" height="425" style="position: absolute; left: 0px; top: 0px; width: 537px; height: 340px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div>
       </div>
-      <div class="panel"><div class="panel-header"><h3>差错角色贡献占比</h3></div><div class="chart-wrap" id="chart-role-pie" _echarts_instance_="ec_1779853466272" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 536px; height: 340px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="670" height="425" style="position: absolute; left: 0px; top: 0px; width: 536px; height: 340px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class=""></div></div></div>
+      <div class="panel"><div class="panel-header"><h3>差错角色贡献占比</h3></div><div class="chart-wrap" id="chart-role-pie" _echarts_instance_="ec_1779853647513" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 536px; height: 340px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="670" height="425" style="position: absolute; left: 0px; top: 0px; width: 536px; height: 340px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(183px, 143px, 0px); border-color: rgb(239, 68, 68); pointer-events: none; visibility: hidden; opacity: 0;">供应商差错: 46次 (70.77%)</div></div></div>
     </div>
   </div>
 
   <!-- Tab 2: 明细数据 -->
-  <div class="tab-content active" id="tab-detail">
+  <div class="tab-content" id="tab-detail">
     <div class="panel">
       <div class="panel-header">
         <h3>明细数据表</h3>
